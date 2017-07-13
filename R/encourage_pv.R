@@ -1,4 +1,4 @@
 encourage_pv <- function() {
-  x <- proverbs_b
-  randomize(x)
+  x <- godmode::proverbs_b
+  godmode:::randomize(x)
 }

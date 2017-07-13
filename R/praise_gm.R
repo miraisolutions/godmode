@@ -11,5 +11,5 @@ praise_gm <- function() {
     "The holy grail of perfect coding!",
     "Your ticket to the Olymp!"
   )
-  randomize(x)
+  godmode:::randomize(x)
 }

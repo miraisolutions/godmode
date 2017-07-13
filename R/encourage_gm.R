@@ -13,5 +13,5 @@ encourage_gm <- function() {
     "Another hit!",
     "No regrets!"
   )
-  randomize(x)
+  godmode:::randomize(x)
 }
