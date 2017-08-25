@@ -2,6 +2,8 @@
 
 export(godmode.off)
 export(godmode.on)
+export(stochModel)
+importFrom(stats,rnorm)
+importFrom(stats,setNames)
 importFrom(utils,find)
 importFrom(utils,installed.packages)
-importFrom(utils,tail)

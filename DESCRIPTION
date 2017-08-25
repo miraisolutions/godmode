@@ -12,10 +12,12 @@ License: GPL-3
 LazyData: true
 NeedsCompilation: no
 Imports:
-    utils
+    utils,
+    stats
 Suggests:
     roxygen2,
-    testthat,
+    assertthat,
+    testthat (>= 1.0.2.9000),
     praise,
     knitr,
     rmarkdown
