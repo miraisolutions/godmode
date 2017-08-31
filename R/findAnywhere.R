@@ -9,6 +9,7 @@
 #' environment and a potentially available imports environment are searched
 #' as well.
 #' @importFrom utils find
+#' @seealso getAnywhere
 findAnywhere <- function(x) {
   stopifnot(length(x) == 1)
 

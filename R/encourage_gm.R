@@ -15,8 +15,10 @@ encourage_gm <- function() {
   )
   checkAudio <- requireNamespace("audio", quietly = TRUE)
   if (checkAudio) {
-    godmode:::playWave("Die.wav")
-    godmode:::playWave("GameOver.wav")
+    #godmode:::playWave("Die.wav")
+    #godmode:::playWave("GameOver.wav")
+    smpl <- godmode:::loadWaves(c("Die.wav", "GameOver.wav"))
+    audio::play.audioSample(smpl)
   }
   godmode:::randomize(x)
 }
