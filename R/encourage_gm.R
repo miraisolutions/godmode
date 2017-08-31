@@ -13,5 +13,10 @@ encourage_gm <- function() {
     "Another hit!",
     "No regrets!"
   )
+  checkAudio <- requireNamespace("audio", quietly = TRUE)
+  if (checkAudio) {
+    godmode:::playWave("Die.wav")
+    godmode:::playWave("GameOver.wav")
+  }
   godmode:::randomize(x)
 }

@@ -5,6 +5,8 @@ Authors@R: c(person("Roland", "Schmid", role = c("aut", "cre"),
                     email = "roland.schmid@mirai-solutions.com"),
              person("Martin", "Studer", role = "ctb",
                     email = "martin.studer@mirai-solutions.com"),
+             person("Nintendo", role = "cph",
+                    comment = "'Die' and 'GameOver' sound"),
              person("Mirai Solutions GmbH", role = "cph",
                     email = "info@mirai-solutions.com"))
 Description: Implements god-mode utility functions to override functions from other packages (namespaces). Provides functions to switch god-mode on or off for testing with the testthat package. Stores collections of proverbs and custom phrases to praise people one way or another.
@@ -19,6 +21,7 @@ Suggests:
     assertthat,
     testthat (>= 1.0.2.9000),
     praise,
+    audio,
     knitr,
     rmarkdown
 URL: http://www.mirai-solutions.com, https://github.com/miraisolutions/godmode

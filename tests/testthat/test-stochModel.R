@@ -5,7 +5,8 @@ suppressMessages({
 context("stochModel")
 
 # god-mode
-godmode.on(pv = TRUE)
+#godmode.on(pv = TRUE)
+godmode.on(pv = FALSE)
 
 if (FALSE) {
   # Execute the command below to run the tests
@@ -58,7 +59,7 @@ test_that("Output is as expected", {
   expect_equal(res1, res2)
   expect_equal(res1, exp123, tolerance = 0.00000001, scale = 1, info = "rounded")
   # test expectation failing example:
-  # expect_equal(res1, res3)
+  expect_equal(res1, res3)
   # note below expectation only holds true as long as messaging isn't re-routed to cat!
   # expect_message(godmode::stochModel(123), "idx is 31")
 
