@@ -1,6 +1,9 @@
 # godmode
 `Godmode` package for **R**
 
+Provides alternative praise and encouragement, either in *god-mode* or *proverbs* mode.
+
+### Installation
 Requires latest version of `testthat`:
 
 `devtools::install_github("hadley/testthat")`
