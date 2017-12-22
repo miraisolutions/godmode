@@ -13,7 +13,7 @@ Install with `devtools`:
 `devtools::install_github("miraisolutions/godmode")`
 
 ### Getting started
-To see an example of how to use this package, best have a look at (i.e. read and try to run) `tests/testthat/test-stochModel.R`.
+To see an example for one possible way of how to use this package, best have a look at (i.e. read and try to run) `tests/testthat/test-stochModel.R`.
 
 ## Optional
 If you like to play sounds, make sure to install the `audio` package from **CRAN**.
