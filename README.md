@@ -13,7 +13,9 @@ Install with `devtools`:
 `devtools::install_github("miraisolutions/godmode")`
 
 ### Getting started
-To see an example for one possible way of how to use this package, best have a look at (i.e. read and try to run) `tests/testthat/test-stochModel.R`.
+To see an example for one possible way of how to use this package, best clone this repository into a new project inside RStudio and have a look at (i.e. read and try to run) `tests/testthat/test-stochModel.R`.
+
+In case of proxy issues have a look at https://gist.github.com/evantoli/f8c23a37eb3558ab8765.
 
 ## Optional
 If you like to play sounds, make sure to install the `audio` package from **CRAN**.
