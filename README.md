@@ -1,5 +1,6 @@
 # godmode
 [![Build Status](https://travis-ci.org/miraisolutions/godmode.svg?branch=master)](https://travis-ci.org/miraisolutions/godmode)
+[![codecov](https://codecov.io/gh/miraisolutions/godmode/branch/master/graph/badge.svg)](https://codecov.io/gh/miraisolutions/godmode)
 
 `Godmode` package for **R**
 
