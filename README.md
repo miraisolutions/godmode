@@ -1,4 +1,5 @@
 # godmode
+[![Build Status](https://travis-ci.org/miraisolutions/godmode.svg?branch=master)](https://travis-ci.org/miraisolutions/godmode)
 `Godmode` package for **R**
 
 Provides alternative praise and encouragement, either in *god-mode* or *proverbs* mode.
