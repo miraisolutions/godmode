@@ -12,6 +12,10 @@ Install with `devtools`:
 
 `devtools::install_github("miraisolutions/godmode")`
 
+Or in case you would like to build the vignette as well:
+
+`devtools::install_github("miraisolutions/godmode", build_vignettes = TRUE)`
+
 ### Getting started
 To see an example for one possible way of how to use this package, best clone this repository into a new project inside RStudio and have a look at (i.e. read and try to run) `tests/testthat/test-stochModel.R`.
 

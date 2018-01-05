@@ -23,3 +23,6 @@ as well. I.e. for a package environment also the package's namespace
 environment and a potentially available imports environment are searched
 as well.
 }
+\seealso{
+getAnywhere
+}
