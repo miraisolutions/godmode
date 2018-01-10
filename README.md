@@ -5,6 +5,13 @@
 `Godmode` package for **R**
 
 Provides alternative praise and encouragement, either in *god-mode* or *proverbs* mode.
+Aims to provide more variety and fun in testing.
+
+Also offers a set of unexported functions that can be useful for quick & dirty substitution of functions in namespaces of other packages, which for some people / teams / R-analytics-setups can help in accelerating proto-typing and testing of changes and ultimately time-to-production.
+It is advised to get a good understanding of the base functions used in this part and their behavior, before attempting to make use of this elsewhere, in order to avoid undesired side effects and break-downs.
+
+For related reasons, this package will quite certainly never make it to CRAN.
+[![CRAN](http://www.r-pkg.org/badges/version/godmode)](https://cran.r-project.org/package=godmode) [![Downloads](http://cranlogs.r-pkg.org/badges/godmode?color=brightgreen)](http://www.r-pkg.org/pkg/godmode)
 
 ### Installation
 Requires latest version of `testthat`:
