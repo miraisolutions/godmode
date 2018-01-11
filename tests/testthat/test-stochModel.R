@@ -64,3 +64,5 @@ test_that("Output is as expected", {
   expect_message(godmode::stochModel(123), "idx is 31")
 
 })
+
+godmode.off()
