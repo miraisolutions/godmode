@@ -17,13 +17,11 @@ Imports:
 Suggests:
     roxygen2,
     assertthat,
-    testthat (>= 1.0.2.9000),
+    testthat (>= 2.0.0),
     praise,
     audio,
     knitr,
     rmarkdown
-Remotes:
-    hadley/testthat
 URL: http://www.mirai-solutions.com, https://github.com/miraisolutions/godmode
 BugReports: https://github.com/miraisolutions/godmode/issues
 RoxygenNote: 6.0.1
