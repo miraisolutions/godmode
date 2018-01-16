@@ -11,7 +11,7 @@ Also offers a set of unexported functions that can be useful for quick & dirty s
 It is advised to get a good understanding of the base functions used in this part and their behavior, before attempting to make use of this elsewhere, in order to avoid undesired side effects and break-downs.
 
 For related reasons, this package will quite certainly never make it to CRAN.
-[![CRAN](http://www.r-pkg.org/badges/version/godmode)](https://cran.r-project.org/package=godmode) [![Downloads](http://cranlogs.r-pkg.org/badges/godmode?color=brightgreen)](http://www.r-pkg.org/pkg/godmode)
+[![CRAN](http://www.r-pkg.org/badges/version/godmode)](https://cran.r-project.org/package=godmode) <!--[![Downloads](http://cranlogs.r-pkg.org/badges/godmode?color=brightgreen)](http://www.r-pkg.org/pkg/godmode)-->
 
 ### Installation
 Requires latest version of `testthat`:
