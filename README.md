@@ -14,9 +14,7 @@ For related reasons, this package will quite certainly never make it to CRAN.
 [![CRAN](http://www.r-pkg.org/badges/version/godmode)](https://cran.r-project.org/package=godmode) <!--[![Downloads](http://cranlogs.r-pkg.org/badges/godmode?color=brightgreen)](http://www.r-pkg.org/pkg/godmode)-->
 
 ### Installation
-Requires latest version of `testthat`:
-
-`devtools::install_github("hadley/testthat")`
+Is meant to be used in conjunction with new version of `testthat`, which has been published to CRAN on 2017-12-13 (version 2.0.0).
 
 Install with `devtools`:
 
