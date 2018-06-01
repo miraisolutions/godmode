@@ -21,7 +21,8 @@ Suggests:
     praise,
     audio,
     knitr,
-    rmarkdown
+    rmarkdown,
+    devtools
 URL: http://www.mirai-solutions.com, https://github.com/miraisolutions/godmode
 BugReports: https://github.com/miraisolutions/godmode/issues
 RoxygenNote: 6.0.1
