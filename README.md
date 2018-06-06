@@ -1,4 +1,4 @@
-<img src="man/figures/godmode.png" align="right" width="15%" height="auto"/>
+<img src="man/figures/godmode.png" align="right" width="20%" height="auto"/>
 
 # godmode
 [![Build Status](https://travis-ci.org/miraisolutions/godmode.svg?branch=master)](https://travis-ci.org/miraisolutions/godmode)
