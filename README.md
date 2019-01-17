@@ -18,13 +18,13 @@ For related reasons, this package will quite certainly never make it to
 ### Installation
 Is meant to be used in conjunction with new version of `testthat`, which has been published to CRAN on 2017-12-13 (version 2.0.0).
 
-Install with `devtools`:
+Install with `remotes`:
 
-`devtools::install_github("miraisolutions/godmode")`
+`remotes::install_github("miraisolutions/godmode")`
 
 Or in case you would like to build the vignette as well:
 
-`devtools::install_github("miraisolutions/godmode", build_vignettes = TRUE)`
+`remotes::install_github("miraisolutions/godmode", build_vignettes = TRUE)`
 
 ### Getting started
 To see an example for one possible way of how to use this package, best clone this repository into a new project inside RStudio and have a look at (i.e. read and try to run) `tests/testthat/test-stochModel.R`.
