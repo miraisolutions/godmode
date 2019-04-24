@@ -1,18 +1,18 @@
 language: r
 cache: packages
 sudo: false
-r:
-  - oldrel
-  - release
-  - devel
+matrix:
+  include:
+  - r: oldrel
+  - r: release
+    after_success:
+    - Rscript -e 'covr::codecov()'
+  - r: devel
 
 warnings_are_errors: true
 
 r_packages:
   - covr
-
-after_success:
-  - Rscript -e 'library(covr); codecov()'
 
 # https://github.com/travis-ci/travis-ci/issues/2894#issuecomment-161461962
 notifications:
