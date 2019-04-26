@@ -20,11 +20,15 @@ Is meant to be used in conjunction with new version of `testthat`, which has bee
 
 Install with `remotes`:
 
-`remotes::install_github("miraisolutions/godmode")`
+```r
+remotes::install_github("miraisolutions/godmode")
+```
 
 Or in case you would like to build the vignette as well:
 
-`remotes::install_github("miraisolutions/godmode", build_vignettes = TRUE)`
+```r
+remotes::install_github("miraisolutions/godmode", build_opts = "")
+```
 
 ### Getting started
 To see an example for one possible way of how to use this package, best clone this repository into a new project inside RStudio and have a look at (i.e. read and try to run) `tests/testthat/test-stochModel.R`.
