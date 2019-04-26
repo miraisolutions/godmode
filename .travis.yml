@@ -1,6 +1,5 @@
 language: r
 cache: packages
-sudo: false
 matrix:
   include:
   - r: oldrel
