@@ -1,0 +1,68 @@
+# R CMD check + code coverage
+
+################################################################################
+# TODO: check if we can re-establish a similar notification to Slack.
+#notifications:
+#  slack:
+#    rooms:
+#      - secure: KJSJeHygQ1oPMdwJGo3MzGLXvzPZYYB1Cgszq0d/K5wq4ukZk/QudCigeEC9OknuWHUd/e5qb57qM+MYj5/sIDmH1QTMczbmnD0L94wMVOBUAHXga53Z7i2UrcJIjvDWLKxzLb3zwq+Key24uYp5minggkQ13RD46XS1c0wqIsRpL4vVQhz7Bg7YvPYMHOEk3JoMwiUa4Qu3790GAfyQJDNufkIYun5eiloJL3bWPs1dzBFnriyInBT7kNMJjYHL0GQtxUlPKrjtx9SpggMmivH1v8905FUMbuOi4NPuy3i+aVDausc5TfeB9/OXmKqozfsCtQRrjkZNb+yis22pICsOHxAx9r7Czo3MVxuXYg8ibkd8Vdo2Vjy4UXonM5mHS/yDFJhHw4tYphw3l6e8SqWdGcWW4wrEPLgh3LiWUyctDVSi8idq+Lyd3+8gQOqgpU2wYePZB2QwWZYbTnBQcWm3MmDIEsz+eV07nnce/8FqhR9r7VQJfNb47v/rCIIojJZv4/0tKLVN7F0O+J+HsVve7GaKUhzhWFa5Hf9pGNaPBpXiX46fL3lsgAdTYnY16lPGIgXRf0Nl43GEY7jsVK66qecpN8LmkES//Mrj5VEstcwypENavaW/0MCfJ4xF4772UGaPUJurogt9B1N2lMInXGj22YPg1/tP5IFNaCE=
+#    on_success: always
+################################################################################
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+name: R-CMD-check
+
+jobs:
+  R-CMD-check:
+    runs-on: ${{ matrix.config.os }}
+
+    name: ${{ matrix.config.os }} (${{ matrix.config.r }})
+
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - {os: macOS-latest,   r: 'release'}
+          - {os: windows-latest, r: 'release'}
+          - {os: ubuntu-latest,   r: 'devel', http-user-agent: 'release'}
+          - {os: ubuntu-latest,   r: 'release'}
+          - {os: ubuntu-latest,   r: 'oldrel-1'}
+
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_KEEP_PKG_SOURCE: yes
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: r-lib/actions/setup-pandoc@v1
+
+      - uses: r-lib/actions/setup-r@v1
+        with:
+          r-version: ${{ matrix.config.r }}
+          http-user-agent: ${{ matrix.config.http-user-agent }}
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-r-dependencies@v1
+        with:
+          extra-packages: rcmdcheck, covr
+
+      - uses: r-lib/actions/check-r-package@v1
+
+      - name: Upload check results
+        if: failure()
+        uses: actions/upload-artifact@main
+        with:
+          name: ${{ runner.os }}-r${{ matrix.config.r }}-results
+          path: check
+
+      - name: Test coverage
+        if: success() && runner.os == 'Linux' && matrix.config.r == 'release'
+        run: |
+          covr::codecov()
+        shell: Rscript {0}

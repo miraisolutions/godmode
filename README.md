@@ -1,8 +1,10 @@
 <img src="man/figures/godmode.png" align="right" width="20%" height="auto"/>
 
 # godmode
-[![Build Status](https://travis-ci.com/miraisolutions/godmode.svg?branch=master)](https://travis-ci.com/miraisolutions/godmode)
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/miraisolutions/godmode/workflows/R-CMD-check/badge.svg)](https://github.com/miraisolutions/godmode/actions)
 [![codecov](https://codecov.io/gh/miraisolutions/godmode/branch/master/graph/badge.svg)](https://codecov.io/gh/miraisolutions/godmode)
+<!-- badges: end -->
 
 `Godmode` package for **R**
 
