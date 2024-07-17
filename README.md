@@ -2,7 +2,7 @@
 
 # godmode
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/miraisolutions/godmode/workflows/R-CMD-check/badge.svg)](https://github.com/miraisolutions/godmode/actions)
+[![R-CMD-check](https://github.com/miraisolutions/godmode/actions/workflows/ci.yaml/badge.svg)](https://github.com/miraisolutions/godmode/actions/workflows/ci.yaml)
 [![codecov](https://codecov.io/gh/miraisolutions/godmode/branch/master/graph/badge.svg)](https://codecov.io/gh/miraisolutions/godmode)
 <!-- badges: end -->
 
