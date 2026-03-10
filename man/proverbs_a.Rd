@@ -4,7 +4,9 @@
 \name{proverbs_a}
 \alias{proverbs_a}
 \title{English success-related proverbs}
-\format{A character vector, where each element is a different proverb.}
+\format{
+A character vector, where each element is a different proverb.
+}
 \source{
 \url{https://en.wikiquote.org/wiki/English_proverbs_(alphabetically_by_proverb)}
 }
