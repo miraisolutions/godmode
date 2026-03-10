@@ -3,3 +3,4 @@
 ^codecov\.yml$
 ^\.github$
 ^update_proverbs\.R$
+^\.vscode$
