@@ -18,18 +18,12 @@ For related reasons, this package will quite certainly never make it to
 [![CRAN](http://www.r-pkg.org/badges/version/godmode)](https://cran.r-project.org/package=godmode) <!--[![Downloads](http://cranlogs.r-pkg.org/badges/godmode?color=brightgreen)](http://www.r-pkg.org/pkg/godmode)-->
 
 ### Installation
-Is meant to be used in conjunction with new version of `testthat`, which has been published to CRAN on 2017-12-13 (version 2.0.0).
+Is meant to be used in conjunction with newer versions of `testthat`, which have been published to CRAN on 2017-12-13 (version 2.0.0) and later.
 
 Install with `remotes`:
 
 ```r
 remotes::install_github("miraisolutions/godmode")
-```
-
-Or in case you would like to build the vignette as well:
-
-```r
-remotes::install_github("miraisolutions/godmode", build_opts = "")
 ```
 
 ### Getting started
@@ -41,7 +35,6 @@ In case of proxy issues have a look at https://gist.github.com/evantoli/f8c23a37
 
 ### `proverbs_a` — success/victory context
 
-- A broken watch is right two times a day
 - Cometh the hour, cometh the man
 - Don't cross a bridge before you come to it
 - Don't mend what ain't broken
@@ -68,6 +61,7 @@ In case of proxy issues have a look at https://gist.github.com/evantoli/f8c23a37
 ### `proverbs_b` — near-success/perseverance/failure context
 
 - A bad workman blames his tools
+- A broken watch is right two times a day
 - A chain is only as strong as its weakest link
 - Ask me no questions, I'll tell you no lies
 - Bad news travels fast...
