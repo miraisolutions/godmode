@@ -1,6 +1,6 @@
 Package: godmode
 Title: God-mode for more fun and less annoyance
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(person("Roland", "Schmid", role = c("aut", "cre"),
                     email = "roland.schmid@mirai-solutions.com"),
              person("Martin", "Studer", role = "ctb",
@@ -15,15 +15,13 @@ Imports:
     utils,
     stats
 Suggests:
-    roxygen2,
     assertthat,
     testthat (>= 2.0.0),
     praise,
     audio,
-    knitr,
-    rmarkdown,
-    devtools
+    devtools,
+    withr
 URL: http://www.mirai-solutions.com, https://github.com/miraisolutions/godmode
 BugReports: https://github.com/miraisolutions/godmode/issues
-RoxygenNote: 6.0.1
-VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Encoding: UTF-8
