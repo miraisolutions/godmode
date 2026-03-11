@@ -19,7 +19,8 @@ Suggests:
     testthat (>= 2.0.0),
     praise,
     audio,
-    devtools
+    devtools,
+    withr
 URL: http://www.mirai-solutions.com, https://github.com/miraisolutions/godmode
 BugReports: https://github.com/miraisolutions/godmode/issues
 RoxygenNote: 7.3.2
