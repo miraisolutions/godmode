@@ -36,7 +36,7 @@ In case of proxy issues have a look at https://gist.github.com/evantoli/f8c23a37
 The `proverbs` dataset is a data.frame with a `proverb` and a `score` column. The score ranges from -100 to +100: positive means success/victory context, negative means perseverance/failure context, and zero means the proverb fits either. The absolute value of the score is used as a sampling weight.
 
 | Proverb | Score |
-|---------|------:|
+|:--------|------:|
 | Cometh the hour, cometh the man | 80 |
 | Don't cross a bridge before you come to it | 20 |
 | Don't mend what ain't broken | 20 |
