@@ -1,5 +1,5 @@
 encourage_pv <- function() {
   x <- godmode::proverbs
-  x <- x[x$score <= 0, ]
+  x <- godmode:::filter_neg(x)
   godmode:::randomize(x$proverb, prob = pmax(abs(x$score), 10L))
 }
