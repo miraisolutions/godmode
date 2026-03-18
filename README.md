@@ -33,7 +33,7 @@ In case of proxy issues have a look at https://gist.github.com/evantoli/f8c23a37
 
 ## Proverbs
 
-The `proverbs` dataset is a data.frame with a `proverb` and a `score` column. The score ranges from -100 to +100: positive means success/victory context, negative means perseverance/failure context, and zero means the proverb fits either. The absolute value of the score is used as a sampling weight.
+The `proverbs` dataset is a data.frame with a `proverb` and a `score` column. The score ranges from -100 to +100: positive means success/victory context, negative means perseverance/failure context, and zero means the proverb fits either. The absolute value of the score is used as a sampling weight, with a minimum weight floor so that low- or zero-score proverbs are still sampled with a small probability.
 
 | Proverb | Score |
 |:--------|------:|
