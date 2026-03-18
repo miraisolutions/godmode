@@ -1,20 +1,17 @@
-#' @title English success-related proverbs
+#' @title English proverbs
 #'
-#' @description A dataset containing a subset of English proverbs that can be fitting in situations of success,
-#' victory or the like.
+#' @description A dataset containing a collection of English proverbs, each associated with a score indicating
+#' its contextual fit. A positive score indicates the proverb is fitting in situations of success or victory.
+#' A negative score indicates it fits situations of near-success, perseverance, success in the face of adversity,
+#' minor failure or the like. Basically whatever you may want to hear after successfully triggering a test-case failure.
+#' A score of zero means the proverb can be used in either context. The absolute value of the score reflects
+#' how strongly the proverb fits its category, and is used as a sampling weight.
 #'
-#' @format A character vector, where each element is a different proverb.
-#'
-#' @source \url{https://en.wikiquote.org/wiki/English_proverbs_(alphabetically_by_proverb)}
-"proverbs_a"
-
-#' @title English non-success-related proverbs
-#'
-#' @description A dataset containing a subset of English proverbs that can be fitting in situations of near-success,
-#' perseverance, success in the face of adversity, minor failure or the like. Basically whatever you may want to hear
-#' after successfully triggering a test-case failure.
-#'
-#' @format A character vector, where each element is a different proverb.
+#' @format A data.frame with 68 rows and 2 columns:
+#' \describe{
+#'   \item{proverb}{A character string containing the proverb.}
+#'   \item{score}{An integer in the range \[-100, 100\] indicating the contextual fit of the proverb.}
+#' }
 #'
 #' @source \url{https://en.wikiquote.org/wiki/English_proverbs_(alphabetically_by_proverb)}
-"proverbs_b"
+"proverbs"
