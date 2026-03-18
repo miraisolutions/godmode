@@ -11,8 +11,8 @@ test_that("filter_neg returns only rows with score <= 0", {
 })
 
 test_that("get_score returns the score for a known proverb", {
-  pv <- godmode::proverbs$proverb[[1]]
-  expect_equal(godmode:::get_score(pv), godmode::proverbs$score[[1]])
+  pv <- godmode::proverbs$proverb[1]
+  expect_equal(godmode:::get_score(pv), godmode::proverbs$score[1])
 })
 
 test_that("get_score errors when proverb is not found", {
